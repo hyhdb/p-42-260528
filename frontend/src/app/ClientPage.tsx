@@ -6,6 +6,8 @@ import { use } from "react";
 export default function Page() {
   const { isLogin, loginMember } = use(LoginMemberContext);
 
+  const num = 10;
+
   return (
     <>
       {!isLogin && (
