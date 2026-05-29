@@ -48,7 +48,8 @@ spring:
       client:
         registration:
           kakao:
-            clientId: ON_SECRET
+            client-id: 041f0e026d093db5c57b4e4285e7f40e
+            client-secret: 2nGS4sIPPTsJeRWVihFrjPaS1YBTThbV
             scope: profile_nickname, profile_image
             client-name: Kakao
             authorization-grant-type: authorization_code
@@ -72,9 +73,9 @@ springdoc:
 
 
 custom:
-  appName: app4
+  appName: test-app
   prod:
-    domain: qwas.shop
+    domain: hyhdb.shop
     backUrl: "https://api.${custom.appName}.${custom.prod.domain}"
     frontUrl: "https://www.${custom.appName}.${custom.prod.domain}"
 
@@ -84,9 +85,9 @@ custom:
     frontUrl: "http://${custom.dev.domain}:3000"
 
   site:
-    domain: "${custom.prod.domain}"
-    backUrl: "${custom.prod.backUrl}"
-    frontUrl: "${custom.prod.frontUrl}"
+    domain: "${custom.dev.domain}"
+    backUrl: "${custom.dev.backUrl}"
+    frontUrl: "${custom.dev.frontUrl}"
 
   jwt:
     expire-seconds: "#{60 * 30}"
